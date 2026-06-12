@@ -1,0 +1,178 @@
+PS C:\Users\Niazi Gaming Store\OneDrive\Documents\botflow> npm run dev
+
+> botflow@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://169.254.83.107:3000
+- Environments: .env
+✓ Ready in 1429ms
+
+ GET /login 200 in 1627ms (next.js: 866ms, application-code: 762ms)
+ GET / 200 in 1571ms (next.js: 793ms, application-code: 778ms)
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+
+    at module evaluation (src\lib\prisma.ts:7:49)
+    at module evaluation (src\lib\auth.ts:4:1)
+    at module evaluation (src\app\api\auth\[...nextauth]\route.ts:1:1)
+    at Object.<anonymous> (C:\Users\Niazi Gaming Store\OneDrive\Documents\botflow\.next\dev\server\app\api\auth\[...nextauth]\route.js:9:3)
+   5 | };
+   6 |
+>  7 | export const prisma = globalForPrisma.prisma ?? new PrismaClient();
+     |                                                 ^
+   8 |
+   9 | if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/api/auth/session'
+}
+ GET /login 200 in 181ms (next.js: 84ms, application-code: 97ms)
+ GET /api/auth/session 500 in 1889ms (next.js: 1229ms, application-code: 660ms)
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+
+    at module evaluation (src\lib\prisma.ts:7:49)
+    at module evaluation (src\lib\auth.ts:4:1)
+    at module evaluation (src\app\api\auth\[...nextauth]\route.ts:1:1)
+    at Object.<anonymous> (C:\Users\Niazi Gaming Store\OneDrive\Documents\botflow\.next\dev\server\app\api\auth\[...nextauth]\route.js:9:3)
+   5 | };
+   6 |
+>  7 | export const prisma = globalForPrisma.prisma ?? new PrismaClient();
+     |                                                 ^
+   8 |
+   9 | if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/api/auth/session'
+}
+[browser] ClientFetchError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON. Read more at https://errors.authjs.dev#autherror
+    at fetchData (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:514:22) 
+    at async getSession (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:681:21)
+    at async SessionProvider.useEffect [as _getSession] (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:824:51) (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:514:16)
+ GET /api/auth/session 500 in 434ms (next.js: 400ms, application-code: 34ms)
+[browser] ClientFetchError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON. Read more at https://errors.authjs.dev#autherror
+    at fetchData (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:514:22) 
+    at async getSession (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:681:21)
+    at async SessionProvider.useEffect [as _getSession] (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:824:51) (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:514:16)
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+
+    at module evaluation (src\lib\prisma.ts:7:49)
+    at module evaluation (src\lib\auth.ts:4:1)
+    at module evaluation (src\app\api\auth\[...nextauth]\route.ts:1:1)
+    at Object.<anonymous> (C:\Users\Niazi Gaming Store\OneDrive\Documents\botflow\.next\dev\server\app\api\auth\[...nextauth]\route.js:9:3)
+   5 | };
+   6 |
+>  7 | export const prisma = globalForPrisma.prisma ?? new PrismaClient();
+     |                                                 ^
+   8 |
+   9 | if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/api/auth/providers'
+}
+ GET /api/auth/providers 500 in 215ms (next.js: 172ms, application-code: 43ms)
+[browser] ClientFetchError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON. Read more at https://errors.authjs.dev#autherror
+    at fetchData (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:514:22) 
+    at async signIn (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:704:23) (file://C:/Users/Niazi Gaming Store/OneDrive/Documents/botflow/.next/dev/static/chunks/node_modules_1-hz3vc._.js:514:16)
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+
+    at module evaluation (src\lib\prisma.ts:7:49)
+    at module evaluation (src\lib\auth.ts:4:1)
+    at module evaluation (src\app\api\auth\[...nextauth]\route.ts:1:1)
+    at Object.<anonymous> (C:\Users\Niazi Gaming Store\OneDrive\Documents\botflow\.next\dev\server\app\api\auth\[...nextauth]\route.js:9:3)
+   5 | };
+   6 |
+>  7 | export const prisma = globalForPrisma.prisma ?? new PrismaClient();
+     |                                                 ^
+   8 |
+   9 | if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/api/auth/error'
+}
+ GET /api/auth/error 500 in 179ms (next.js: 150ms, application-code: 28ms)
+[browser] Uncaught PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+
+    at module evaluation (file://C:\Users\Niazi Gaming Store\OneDrive\Documents\botflow\.next\dev\server\chunks\[root-of-the-server]__16ag1k7._.js:66:42)
+    at module evaluation (file://C:\Users\Niazi Gaming Store\OneDrive\Documents\botflow\.next\dev\server\chunks\[root-of-the-server]__16ag1k7._.js:86:148)
+    at module evaluation (file://C:\Users\Niazi Gaming Store\OneDrive\Documents\botflow\.next\dev\server\chunks\[root-of-the-server]__16ag1k7._.js:126:146)
+    at module evaluation (file://C:\Users\Niazi Gaming Store\OneDrive\Documents\botflow\.next\dev\server\chunks\node_modules_next_1f7vpma._.js:18166:184)
+    at Object.<anonymous> (.next\dev\server\app\api\auth\[...nextauth]\route.js:9:3)
